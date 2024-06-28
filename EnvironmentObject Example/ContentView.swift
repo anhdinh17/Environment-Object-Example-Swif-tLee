@@ -10,6 +10,7 @@ import SwiftUI
 // We start injecting to ContentView => all of its child can access to 'Theme'
 // Views that don't need to access to it don't have to declare @EnvironmentObject.
 // Only ViewC in this case needs to delcare @EnvironmentObject since it wants to access to 'Theme'
+// This also works if we inject at ViewB instead of Root View
 
 struct ContentView: View {
     var body: some View {
